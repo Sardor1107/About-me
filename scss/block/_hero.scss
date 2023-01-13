@@ -1,0 +1,231 @@
+.hero-section {
+    position: relative;
+    padding: 100px;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background: url("../../img/bg3.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+.content{
+    max-width: 800px;
+}
+.hero__title {
+    color: #fff;
+    font-size: 36px;
+    font-weight: 500;
+}
+.ism {
+    font-size: 60px;
+    font-weight: 600;
+}
+.animation-text {
+    height: 70px;
+    overflow: hidden;
+    position: relative;
+}
+.animation__title {
+    color: crimson;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 70px;
+    letter-spacing: 1px;
+}
+.animation__title:nth-child(1) {
+    animation: text-move 10s infinite;
+}
+@keyframes text-move {
+    0%{
+        margin-top: 0;
+    }
+    25%{
+        margin-top: -70px;
+    }
+    50%{
+        margin-top: -140px;
+    }
+    75%{
+        margin-top: -70px;
+    }
+    100%{
+        margin-top: 0;
+    }
+}
+.btn {
+    color: #fff;
+    background-color: crimson;
+    font-size: 17px;
+    font-weight: 600;
+    display: inline-block;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    text-decoration:  none;
+    letter-spacing: 2px;
+    border-radius: 4px;
+    margin-top: 30px;
+    transition: .5s ease;
+}
+.btn:hover {
+    background-color: #fff;
+    color: rgb(34, 28, 28);
+}
+.media-icons {
+    margin-top: 30px;
+}
+.hero__link {
+    color: #fff;
+    font-size: 25px;
+    margin-right: 30px;
+}
+
+// responsive
+
+@media only screen and (max-width:900px){
+    .hero-section{
+        position: relative;
+        padding: 80px;
+    }
+    .hero__title {
+        color: #fff;
+        font-size: 30px;
+    }
+    .ism {
+        font-size: 44px;
+        font-weight: 600;
+    }
+    .animation-text {
+        height: 50px;
+        overflow: hidden;
+        position: relative;
+    }
+    .animation__title {
+        color: crimson;
+        font-size: 36px;
+        font-weight: 600;
+        line-height: 50px;
+    }
+    @keyframes text-move {
+        0%{
+            margin-top: 0;
+        }
+        25%{
+            margin-top: -50px;
+        }
+        50%{
+            margin-top: -100px;
+        }
+        75%{
+            margin-top: -50px;
+        }
+        100%{
+            margin-top: 0;
+        }
+    }
+    .btn {
+        font-size: 15px;
+        padding: 8px 16px;
+        margin-top: 20px;
+    }
+}
+@media only screen and (max-width:540px){
+    .hero-section{
+        padding: 40px;
+        padding-left: 40px;
+    }
+    .hero__title {
+        color: #fff;
+        font-size: 24px;
+    }
+    .ism {
+        font-size: 36px;
+        font-weight: 600;
+    }
+    .animation-text {
+        height: 40px;
+    }
+    .animation__title {
+        font-size: 30px;
+    }
+    @keyframes text-move {
+        0%{
+            margin-top: 0;
+        }
+        25%{
+            margin-top: -40px;
+        }
+        50%{
+            margin-top: -80px;
+        }
+        75%{
+            margin-top: -40px;
+        }
+        100%{
+            margin-top: 0;
+        }
+    }
+    .btn {
+        font-size: 15px;
+        padding: 7px 10px;
+        margin-top: 20px;
+    }
+    .media-icons {
+        margin-top: 18px;
+    }
+    .hero__link {
+        font-size: 20px;
+        margin-right: 20px;
+    }
+}
+@media only screen and (max-width:600px){
+    .hero-section{
+        padding: 40px;
+        padding-left: 40px;
+    }
+    .hero__title {
+        color: #fff;
+        font-size: 24px;
+    }
+    .ism {
+        font-size: 36px;
+        font-weight: 600;
+    }
+    .animation-text {
+        height: 40px;
+    }
+    .animation__title {
+        font-size: 30px;
+    }
+    @keyframes text-move {
+        0%{
+            margin-top: 0;
+        }
+        25%{
+            margin-top: -40px;
+        }
+        50%{
+            margin-top: -80px;
+        }
+        75%{
+            margin-top: -40px;
+        }
+        100%{
+            margin-top: 0;
+        }
+    }
+    .btn {
+        font-size: 15px;
+        padding: 7px 10px;
+        margin-top: 20px;
+    }
+    .media-icons {
+        margin-top: 18px;
+    }
+    .hero__link {
+        font-size: 20px;
+        margin-right: 20px;
+    }
+}

@@ -1,0 +1,133 @@
+.head{
+    position: fixed;
+    background: rgba(255, 255, 255, .1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 15px 100px;
+    z-index: 99;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.head.sticky {
+    background: crimson;
+    padding: 10px 100px;
+}
+.logo {
+    color: #fff;
+    font-size: 32px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+
+.navigation{
+    position: relative;
+}
+
+.link {
+   font-size: 17px;
+   color: #fff;
+   font-weight: 500;
+   margin-left: 30px;
+   transition: .5s ease; 
+}
+.link:hover {
+    color: rgb(24, 10, 13);
+}
+//responsive
+
+@media only screen and (max-width:1049px){
+    .head {
+        padding: 15px 20px;
+    }    
+    .head.sticky  {
+            padding: 15px 20px;
+        }
+        .navigation {
+            display: none;
+        }
+        .link {
+            font-size: 22px;
+            color: #111;
+            margin: 10px;
+            padding: 0 20px;
+            border-radius: 20px;
+
+        }
+        .link:hover {
+            background-color: crimson;
+            color: #fff;
+
+        }
+        .menu-btn {
+            display: flex;
+            position: absolute;
+            background: url("../../img/menu-icon-image.png");
+            background-size: cover  ;
+            background-position: center;
+            width: 40px;
+            height: 35px;
+            right: 15px;
+            margin: 0 20px;
+            cursor: pointer;
+            transition: .4s ease;
+        }
+        .navigation.active{
+            z-index: 111;
+            position: fixed;
+            top: 0;
+            right: 0;
+            width: 380px;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            box-shadow: 1px 1px 5px 5px rgb(231, 223, 223, 0.8);
+            background-color: #fff;
+        }
+        .menu-btn.active {
+            z-index: 999;
+            background-image: url('../../img/close-btn.png');
+            background-repeat: no-repeat;
+            background-size: 25px;
+            background-position: center;
+            transition: .5s ease;
+        }
+}
+.scrolltop-btn {
+    z-index: 888;
+    position: fixed;
+    background-color: crimson;
+    color: #fff;
+    width: 45px;
+    height: 45px;
+    right: 0;
+    bottom: 0;
+    font-size: 22px;
+    text-align: center;
+    line-height: 45px;
+    border-radius: 3px;
+    cursor: pointer;
+    opacity: 0;
+}
+.scrolltop-btn.active {
+    right: 20px;
+    opacity: 1;
+}
+.reveal {
+    position: relative;
+    transform: translateY(50px);
+    opacity: 0;
+    transition: all 1.3s ease;
+}
+.reveal.active {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+
