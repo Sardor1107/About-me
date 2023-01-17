@@ -205,8 +205,8 @@ img {
 }
 
 .animation__title:nth-child(1) {
-  -webkit-animation: text-move 10s infinite;
-          animation: text-move 10s infinite;
+  -webkit-animation: text-move 6s infinite;
+          animation: text-move 6s infinite;
 }
 
 @-webkit-keyframes text-move {
@@ -288,7 +288,7 @@ img {
     font-weight: 600;
   }
   .animation-text {
-    height: 50px;
+    height: 60px;
     overflow: hidden;
     position: relative;
   }
@@ -352,7 +352,7 @@ img {
     font-weight: 600;
   }
   .animation-text {
-    height: 40px;
+    height: 50px;
   }
   .animation__title {
     font-size: 30px;
@@ -418,7 +418,7 @@ img {
     font-weight: 600;
   }
   .animation-text {
-    height: 40px;
+    height: 50px;
   }
   .animation__title {
     font-size: 30px;
@@ -428,13 +428,13 @@ img {
       margin-top: 0;
     }
     25% {
-      margin-top: -40px;
+      margin-top: -30px;
     }
     50% {
-      margin-top: -80px;
+      margin-top: -60px;
     }
     75% {
-      margin-top: -40px;
+      margin-top: -100px;
     }
     100% {
       margin-top: 0;
@@ -445,13 +445,13 @@ img {
       margin-top: 0;
     }
     25% {
-      margin-top: -40px;
+      margin-top: -30px;
     }
     50% {
-      margin-top: -80px;
+      margin-top: -60px;
     }
     75% {
-      margin-top: -40px;
+      margin-top: -100px;
     }
     100% {
       margin-top: 0;
